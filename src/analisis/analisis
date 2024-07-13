@@ -1,0 +1,37 @@
+Clase Abonado
+
+- nombre: String 
+- apellidos: String
+- duracion: enum
+- fecha: String
+- vigente: Boolean
+
+
++ Abonado(nombre, apellidos)
++ Abonado(nombre, apellidos, duracion, fecha, vigente)
+
++ getters and setters
+
++ toString()
++ equals(obj o)
+
+
+Clase GestionAbonados
+ static listaAbonados: ArrayList<Abonado>
+ 
+ + addAbonado(Abonado a): boolean
+ + listAbonado()
+ + buscarAbonado(Abonado a)
+ + deleteAbonado(Abonado a): boolean
+ + modAbonado(Abonado a): boolean
+ + save():arrayList<Abonado>
+ 
+ 
+Clase Fichero
+
+- RUTA : String
+- br:  BufferedReader
+- bw: BufferedWriter
+
++ static leer():ArrayList
++ static escribir(ArrayList)
