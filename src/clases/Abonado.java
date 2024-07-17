@@ -31,6 +31,37 @@ public class Abonado {
 		this.vigente = vigente;
 	}
 	
+	
+	
+	
+	public tipo getDuracion() {
+		return duracion;
+	}
+
+	public void setDuracion(String duracion) {
+		comprobarDuracion(duracion);
+	}
+
+	public String getNombre() {
+		return nombre;
+	}
+
+	public String getApellidos() {
+		return apellidos;
+	}
+
+	public String getFecha() {
+		return fecha;
+	}
+
+	public boolean isVigente() {
+		return vigente;
+	}
+
+	public void setVigente(boolean vigente) {
+		this.vigente = vigente;
+	}
+
 	private void comprobarDuracion(String duracion) {
 		try {
 			this.duracion = tipo.valueOf(duracion);
